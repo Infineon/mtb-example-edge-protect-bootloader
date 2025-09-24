@@ -1,0 +1,43 @@
+{
+    "schema-version": 1.0,
+    "content":
+    [
+        {
+            "name": "metadata_proj_bootloader",
+            "enabled" : true,
+            "commands" : 
+            [
+                {
+                    "command" : "sign",
+                    "inputs" : 
+                    [
+                        {
+                            "file" : "../build/project_hex/proj_bootloader.hex",
+                            "header-size": "0x400",
+                            "fill-value" : "0",
+                            "slot-size" : "0x25000",
+                            "min-erase-size": "0x10",
+                            "hex-address" : "0x32011000"
+                        }
+                    ],
+                    "outputs": 
+                    [
+                        {
+                            "file" : "../build/app_combined.hex",
+                            "format": "ihex"
+                        }
+                    ],
+                    "extra_config": 
+                    [
+                        {
+                            "project": "proj_bootloader",
+                            "debug_config_name" : "proj_bootloader",
+                            "default":false,
+                            "build_dependency" : "project"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

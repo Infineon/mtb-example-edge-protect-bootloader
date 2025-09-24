@@ -1,0 +1,258 @@
+[Click here](../README.md) to view the README.
+
+## Using the code example
+
+
+Following are the bootloader examples, containing standalone Edge Protect bootloader. This example does not bundle a user application with it. You will need integrate the bootloader with other code examples such as [PSOC_Edge_Basic_Secure_App](https://github.com/Infineon/mtb-example-psoc-edge-basic-secure-app).
+
+The default configuration provided serves as a foundational example, demonstrating the initial steps to implement a basic Edge Protect bootloader alongside with a code example or applications. This starting point is designed to be straightforward, allowing you to become acquainted with the fundamental operations and interactions between the bootloader and the application.
+
+Following code examples are pre-configured to work with Edge Protect bootloader out of the box.
+
+1. PSOC&trade; Edge Basic Secure app: For general use-case
+2. PSOC&trade; Edge CM33 RAM app: For launching first application from SRAM
+3. PSOC&trade; Edge SRAM loading: For loading applications from external flash to SRAM for execution
+4. PSOC&trade; Edge MCU OTW update: For performing firmware using wired interfaces
+
+
+Code example | Description                                         
+------------ |-----------------------------------------------------    
+PSOC Edge basic secure app			| For getting started with Edge Protect Bootloader with a simple use case
+PSOC Edge CM33 RAM app				| For building application to downloaded to SRAM and launched from SRAM. Flashless application 
+PSOC Edge SRAM loading				| For loading applications from external flash to SRAM for execution       
+PSOC Edge MCU OTW update			| For performing firmware using wired interfaces
+PSOC Edge MCU encryption			| For Encrypted boot demonstartion with Edge Protect bootloader 
+
+You will need create these applications, add the bootloader, build, and program them independently for different use cases as instructed below. The default code configuration demonstrates how to start with PSOC_Edge_Protect_Bootloader and PSOC_Edge_Basic_Secure_App. Once you are familiar with this basic use cases, you can explore more advanced features such as secured boot, testing secured update, and moving the Edge Protect bootloader (PSOC_Edge_Protect_Bootloader) to the external flash, etc.
+
+
+### Create PSOC_Edge_Protect_Bootloader application
+
+The ModusToolbox&trade; tools package provides the Project Creator as both a GUI tool and a command line tool.
+
+<details><summary><b>Use Project Creator GUI</b></summary>
+
+1. Open the Project Creator GUI tool
+
+   There are several ways to do this, including launching it from the dashboard or from inside the Eclipse IDE. For more details, see the [Project Creator user guide](https://www.infineon.com/ModusToolboxProjectCreator) (locally available at *{ModusToolbox&trade; install directory}/tools_{version}/project-creator/docs/project-creator.pdf*)
+
+2. On the **Choose Board Support Package (BSP)** page, select a kit supported by this code example. See [Supported kits](../README.md#supported-kits-make-variable-target)
+
+   > **Note:** To use this code example for a kit not listed here, you may need to update the source files. If the kit does not have the required resources, the application may not work
+
+3. On the **Select Application** page:
+
+   a. Select the **Applications(s) Root Path** and the **Target IDE**
+
+      > **Note:** Depending on how you open the Project Creator tool, these fields may be pre-selected for you
+
+   b. Select this code example from the list by enabling its check box
+
+      > **Note:** You can narrow the list of displayed examples by typing in the filter box
+
+   c. (Optional) Change the suggested **New Application Name** and **New BSP Name**
+
+   d. Click **Create** to complete the application creation process
+
+</details>
+
+
+<details><summary><b>Use Project Creator CLI</b></summary>
+
+The 'project-creator-cli' tool can be used to create applications from a CLI terminal or from within batch files or shell scripts. This tool is available in the *{ModusToolbox&trade; install directory}/tools_{version}/project-creator/* directory.
+
+Use a CLI terminal to invoke the 'project-creator-cli' tool. On Windows, use the command-line 'modus-shell' program provided in the ModusToolbox&trade; installation instead of a standard Windows command-line application. This shell provides access to all ModusToolbox&trade; tools. You can access it by typing "modus-shell" in the search box in the Windows menu. In Linux and macOS, you can use any terminal application.
+
+The following example clones the "[EdgeProtect Bootloader](https://github.com/Infineon/mtb-example-edge-protect-bootloader)" application with the desired name "EdgeProtectBootloader" configured for the *KIT_PSE84_EVAL_EPC2* BSP into the specified working directory, *C:/mtb_projects*. The directory *C:/mtb_projects* has to be created manually before calling the command:
+
+   ```
+   project-creator-cli --board-id KIT_PSE84_EVAL_EPC2 --app-id mtb-example-edge-protect-bootloader --user-app-name EdgeProtectBootloader --use-modus-shell --target-dir "C:/mtb_projects"
+   ```
+
+The 'project-creator-cli' tool has the following arguments:
+
+Argument | Description | Required/optional
+---------|-------------|-----------
+`--board-id` | Defined in the <id> field of the [BSP](https://github.com/Infineon?q=bsp-manifest&type=&language=&sort=) manifest | Required
+`--app-id`   | Defined in the <id> field of the [CE](https://github.com/Infineon?q=ce-manifest&type=&language=&sort=) manifest | Required
+`--target-dir`| Specify the directory in which the application is to be created if you prefer not to use the default current working directory | Optional
+`--user-app-name`| Specify the name of the application if you prefer to have a name other than the example's default name | Optional
+
+<br>
+
+> **Note:** The project-creator-cli tool uses the `git clone` and `make getlibs` commands to fetch the repository and import the required libraries. For details, see the "Project creator tools" section of the [ModusToolbox&trade; tools package user guide](https://www.infineon.com/ModusToolboxUserGuide) (locally available at {ModusToolbox&trade; install directory}/docs_{version}/mtb_user_guide.pdf).
+
+</details>
+
+
+### Open Edge Protect bootloader application
+
+After the project has been created, you can open it in your preferred development environment.
+
+
+<details><summary><b>Eclipse IDE</b></summary>
+
+If you opened the Project Creator tool from the included Eclipse IDE, the project will open in Eclipse automatically.
+
+For more details, see the [Eclipse IDE for ModusToolbox&trade; user guide](https://www.infineon.com/MTBEclipseIDEUserGuide) (locally available at *{ModusToolbox&trade; install directory}/docs_{version}/mt_ide_user_guide.pdf*).
+
+</details>
+
+
+<details><summary><b>Visual Studio (VS) Code</b></summary>
+
+Launch VS Code manually, and then open the generated *{project-name}.code-workspace* file located in the project directory.
+
+For more details, see the [Visual Studio Code for ModusToolbox&trade; user guide](https://www.infineon.com/MTBVSCodeUserGuide) (locally available at *{ModusToolbox&trade; install directory}/docs_{version}/mt_vscode_user_guide.pdf*).
+
+</details>
+
+
+<details><summary><b>Arm&reg; Keil&reg; µVision&reg;</b></summary>
+
+Double-click the generated *{project-name}.cprj* file to launch the Keil&reg; µVision&reg; IDE.
+
+For more details, see the [Arm&reg; Keil&reg; µVision&reg; for ModusToolbox&trade; user guide](https://www.infineon.com/MTBuVisionUserGuide) (locally available at *{ModusToolbox&trade; install directory}/docs_{version}/mt_uvision_user_guide.pdf*).
+
+</details>
+
+
+<details><summary><b>IAR Embedded Workbench</b></summary>
+
+Open IAR Embedded Workbench manually, and create a new project. Then select the generated *{project-name}.ipcf* file located in the project directory.
+
+For more details, see the [IAR Embedded Workbench for ModusToolbox&trade; user guide](https://www.infineon.com/MTBIARUserGuide) (locally available at *{ModusToolbox&trade; install directory}/docs_{version}/mt_iar_user_guide.pdf*).
+
+</details>
+
+
+<details><summary><b>Command line</b></summary>
+
+If you prefer to use the CLI, open the appropriate terminal, and navigate to the project directory. On Windows, use the command-line 'modus-shell' program; on Linux and macOS, you can use any terminal application. From there, you can run various `make` commands.
+
+For more details, see the [ModusToolbox&trade; tools package user guide](https://www.infineon.com/ModusToolboxUserGuide) (locally available at *{ModusToolbox&trade; install directory}/docs_{version}/mtb_user_guide.pdf*).
+
+</details>
+
+
+### Create the Basic Secure App
+
+The ModusToolbox&trade; tools package provides the Project Creator as both a GUI tool and a command line tool.
+
+<details><summary><b>Use Project Creator GUI</b></summary>
+
+1. Open the Project Creator GUI tool.
+
+   There are several ways to do this, including launching it from the dashboard or from inside the Eclipse IDE. For more details, see the [Project Creator user guide](https://www.infineon.com/ModusToolboxProjectCreator) (locally available at *{ModusToolbox&trade; install directory}/tools_{version}/project-creator/docs/project-creator.pdf*).
+
+2. On the **Choose Board Support Package (BSP)** page, select a kit supported by this code example. See [Supported kits](#supported-kits-make-variable-target).
+
+   > **Note:** To use this code example for a kit not listed here, you may need to update the source files. If the kit does not have the required resources, the application may not work.
+
+3. On the **Select Application** page:
+
+   a. Select the **Peripherals**.
+
+   b. Select this code example from the list by enabling its check box.
+
+   > **Note:** You can narrow the list of displayed examples by typing in the filter box.
+
+   c. (Optional) Change the suggested **New Application Name** and **New BSP Name**.
+
+   d. Click **Create** to complete the application creation process.
+
+</details>
+
+<details><summary><b>Use Project Creator CLI</b></summary>
+
+The 'project-creator-cli' tool can be used to create applications from a CLI terminal or from within batch files or shell scripts. This tool is available in the *{ModusToolbox&trade; install directory}/tools_{version}/project-creator/* directory.
+
+Use a CLI terminal to invoke the 'project-creator-cli' tool. On Windows, use the command-line 'modus-shell' program provided in the ModusToolbox&trade; installation instead of a standard Windows command-line application. This shell provides access to all ModusToolbox&trade; tools. You can access it by typing "modus-shell" in the search box in the Windows menu. In Linux and macOS, you can use any terminal application.
+
+The following example clones the "**PSOC Edge Basic Secure App**" with the desired name "PSOC_Edge_Basic_Secure_App" configured for the *KIT_PSE84_EVAL_EPC2* BSP into the specified working directory, *C:/mtb_projects*. The directory *C:/mtb_projects* has to be created manually before calling the command:
+
+   ```
+   project-creator-cli.exe --board-id KIT_PSE84_EVAL_EPC2 --app-id mtb-example-edge-basic-secure-app --user-app-name PSOC_Edge_Basic_Secure_App --use-modus-shell --target-dir "C:/mtb_projects"
+   ```
+
+The 'project-creator-cli' tool has the following arguments:      
+
+
+Argument                | Description                                         |  Required/optional    
+----------------------  |-----------------------------------------------------|--------------------    
+`--board-id`        | Defined in the <id> field of the **BSP manifest**   | Required         
+`--app-id`           | Defined in the <id> field of the **CE manifest**    | Required         
+`--target-dir`      | Specify the directory in which the application is to be created if you prefer not to use the default current working directory | Optional        
+`--user-app-name`  | Specify the name of the application if you prefer to have a name other than the example's default name | Optional             
+
+> **Note:** The project-creator-cli tool uses the `git clone` and `make getlibs` commands to fetch the repository and import the required libraries. For details, see the "Project creator tools" section of the [ModusToolbox&trade; tools package user guide](https://www.infineon.com/ModusToolboxUserGuide) (locally available at {ModusToolbox&trade; install directory}/docs_{version}/mtb_user_guide.pdf).
+
+</details>
+
+### Open Basic Secure application
+
+After the project has been created, you can open it in your preferred development environment.
+
+<details><summary><b>Using Eclipse IDE</b></summary>
+
+If you opened the Project Creator tool from the included Eclipse IDE, the project will be opened in Eclipse automatically.
+
+For more details, see the [Eclipse IDE for ModusToolbox&trade; user guide](https://www.infineon.com/MTBEclipseIDEUserGuide) (locally available at *{ModusToolbox&trade; install directory}/docs_{version}/mt_ide_user_guide.pdf*).
+
+</details>
+
+
+<details><summary><b>Visual Studio (VS) Code</b></summary>
+
+Launch VS Code manually, and then open the generated *{project-name}.code-workspace* file located in the project directory.
+
+For more details, see the [Visual Studio Code for ModusToolbox&trade; user guide](https://www.infineon.com/MTBVSCodeUserGuide) (locally available at *{ModusToolbox&trade; install directory}/docs_{version}/mt_vscode_user_guide.pdf*).
+
+</details>
+
+
+<details><summary><b>Keil µVision</b></summary>
+
+Double-click the generated *{project-name}.cprj* file to launch the Keil µVision IDE.
+
+For more details, see the [Keil µVision for ModusToolbox&trade; user guide](https://www.infineon.com/MTBuVisionUserGuide) (locally available at *{ModusToolbox&trade; install directory}/docs_{version}/mt_uvision_user_guide.pdf*).
+
+</details>
+
+
+<details><summary><b>IAR Embedded Workbench</b></summary>
+
+Open IAR Embedded Workbench manually, and create a new project. Then select the generated *{project-name}.ipcf* file located in the project directory.
+
+For more details, see the [IAR Embedded Workbench for ModusToolbox&trade; user guide](https://www.infineon.com/MTBIARUserGuide) (locally available at *{ModusToolbox&trade; install directory}/docs_{version}/mt_iar_user_guide.pdf*).
+
+</details>
+
+<details><summary><b>Command line</b></summary>
+
+If you prefer to use the CLI, open the appropriate terminal, and navigate to the project directory. On Windows, use the command-line 'modus-shell' program; on Linux and macOS, you can use any terminal application. From there, you can run various `make` commands.
+
+For more details, see the [ModusToolbox&trade; tools package user guide](https://www.infineon.com/ModusToolboxUserGuide) (locally available at *{ModusToolbox&trade; install directory}/docs_{version}/mtb_user_guide.pdf*).
+
+</details>
+<br> 
+
+> **Note:**
+>	1. Now you have created **Edge protect bootloader** and **Basic secure** applications. To build and program them, follow the instructions below
+>	2. Similar steps are required to create other code examples listed in the document along with the instructions to configure and use them
+	
+
+## Debugging
+
+You can debug the example to step through the code.
+
+<details><summary><b>In Eclipse IDE</b></summary>
+
+Use the **\<Application Name> Debug (KitProg3_MiniProg4)** configuration in the **Quick Panel**. For details, see the "Program and debug" section in the [Eclipse IDE for ModusToolbox&trade; user guide](https://www.infineon.com/MTBEclipseIDEUserGuide).
+
+</details>
+
+<details><summary><b>In other IDEs</b></summary>
+
+Follow the instructions in your preferred IDE.
+</details>

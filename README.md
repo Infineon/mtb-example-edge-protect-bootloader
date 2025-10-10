@@ -10,7 +10,7 @@ This code example has a three project structure: CM33 secure, CM33 non-secure, a
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-edge-protect-bootloader)
 
-[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzUzNzkiLCJTcGVjIE51bWJlciI6IjAwMi0zNTM3OSIsIkRvYyBUaXRsZSI6IlBTT0MmdHJhZGU7IEVkZ2UgTUNVOiBFZGdlIFByb3RlY3QgYm9vdGxvYWRlciIsInJpZCI6ImRvdmhhbGEiLCJEb2MgdmVyc2lvbiI6IjIuMC4xIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJQU09DIn0=)
+[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzUzNzkiLCJTcGVjIE51bWJlciI6IjAwMi0zNTM3OSIsIkRvYyBUaXRsZSI6IlBTT0MmdHJhZGU7IEVkZ2UgTUNVOiBFZGdlIFByb3RlY3QgYm9vdGxvYWRlciIsInJpZCI6ImRvdmhhbGEiLCJEb2MgdmVyc2lvbiI6IjIuMS4wIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJQU09DIn0=)
 
 ## Requirements
 
@@ -217,6 +217,7 @@ Document title: *CE235379* – *PSOC&trade; Edge MCU: Egde Protect bootloader*
  1.x.0   | New code example <br> Early access release
  2.0.0   | GitHub release
  2.0.1   | Use se-rt-services-utils from BSP
+ 2.1.0   | SE RAMApp Staging for EPC4 (CM0 RAMApp) support <br>  Code execution from CM33 SRAM and external memory (EPC2, EPC4) <br> Multi-key multi-image XIP encryption (EPC2, EPC4) support  <br> Image encryption with SE RT Services API (EPC4)
 <br>
 
 

@@ -2405,7 +2405,7 @@
                         <Param id="wordSize_7" value="CY_PDM_PCM_WSIZE_16_BIT"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="E5ESJtxKQgk">
+                <Personality template="pclk_v2" version="1.1" instance="Eha0E-hm5Ug">
                     <Block location="peri[0].group[1].div_8[0]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_EZ_I2C_TARGET_CLK_DIV"/>
@@ -2416,7 +2416,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="-KJIh42hMXA">
+                <Personality template="pclk_v2" version="1.1" instance="x_JYlI1L6F8">
                     <Block location="peri[0].group[1].div_8[1]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_SPI_CONTROLLER_CLK_DIV"/>
@@ -2427,7 +2427,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="74FALe490Is">
+                <Personality template="pclk_v2" version="1.1" instance="91jZLgqkTgI">
                     <Block location="peri[0].group[1].div_8[2]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_USB_OS_TIMER_CLK_DIV"/>
@@ -2438,7 +2438,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="72QnHf3r67A">
+                <Personality template="pclk_v2" version="1.1" instance="0eCBBZTPrVA">
                     <Block location="peri[0].group[1].div_8[3]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_PWM_DT_CLK_DIV"/>
@@ -2449,7 +2449,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="SnXZ_ZAruzg">
+                <Personality template="pclk_v2" version="1.1" instance="7Ygd9rB75-k">
                     <Block location="peri[0].group[1].div_16[0]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_I2C_CONTROLLER_CLK_DIV"/>
@@ -2460,7 +2460,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="r7obuVjoVXM">
+                <Personality template="pclk_v2" version="1.1" instance="SP54joIsfjM">
                     <Block location="peri[0].group[1].div_16[1]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_DEBUG_UART_CLK_DIV"/>
@@ -2471,7 +2471,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="h1jyRfliPco">
+                <Personality template="pclk_v2" version="1.1" instance="Z2tJ5_Ir6pU">
                     <Block location="peri[0].group[1].div_16[2]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_GENERAL_PURPOSE_TIMER_CLK_DIV"/>
@@ -2482,7 +2482,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="38UMBOxuje4">
+                <Personality template="pclk_v2" version="1.1" instance="P3yVCklYUZA">
                     <Block location="peri[0].group[1].div_16[3]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_PWM_LED_CTRL_CLK_DIV"/>
@@ -2493,7 +2493,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="WOOQVPnOl_Y">
+                <Personality template="pclk_v2" version="1.1" instance="IOS8NcdDOlQ">
                     <Block location="peri[0].group[1].div_16_5[0]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_BT_UART_CLK_DIV"/>
@@ -2505,7 +2505,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="vy6xFOXZU08">
+                <Personality template="pclk_v2" version="1.1" instance="AA_pj-cUfag">
                     <Block location="peri[0].group[1].div_16_5[1]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_SMARTIO_PWM_CLK_DIV"/>
@@ -2517,7 +2517,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="5zaI3-vQKc0">
+                <Personality template="pclk_v2" version="1.1" instance="7K8mRLYowXc">
                     <Block location="peri[0].group[1].div_24_5[0]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_SMART_IO_CLK_DIV"/>
@@ -2529,7 +2529,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="ZAMc4kFrGAg">
+                <Personality template="pclk_v2" version="1.1" instance="QwqE5BZ7bNU">
                     <Block location="peri[0].group[7].div_16_5[0]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_TRACE_CLK_DIV"/>
@@ -2541,7 +2541,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="1uBmbxjOkWE">
+                <Personality template="pclk_v2" version="1.1" instance="D4qY9ITIxHk">
                     <Block location="peri[0].group[9].div_8[0]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_I3C_CONTROLLER_CLK_DIV"/>
@@ -2552,7 +2552,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="mmio" version="1.0" instance="fZVxHvxlSOk">
+                <Personality template="mmio" version="1.1" instance="D1GAp62EtQ0">
                     <Block location="peri[0].mmio[0]" locked="true"/>
                     <Parameters>
                         <Param id="divider2" value="2"/>
@@ -2564,7 +2564,7 @@
                         <Param id="dividerEnabled5" value="false"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="XwpX8Wr_koo">
+                <Personality template="pclk_v2" version="1.1" instance="YUh4mjAvsWs">
                     <Block location="peri[1].group[1].div_16_5[0]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_TDM_CONTROLLER_0_CLK_DIV"/>
@@ -2576,7 +2576,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="1Pj3A_gzNQ4">
+                <Personality template="pclk_v2" version="1.1" instance="pTYKRw2Kw7E">
                     <Block location="peri[1].group[1].div_16_5[1]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_PDM_CLK_DIV"/>
@@ -2588,7 +2588,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="d9AiDHtoEjA">
+                <Personality template="pclk_v2" version="1.1" instance="Pa3o0_LiBpk">
                     <Block location="peri[1].group[2].div_8[0]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_SDHC_0_CLK_DIV"/>
@@ -2599,7 +2599,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="pclk_v2" version="1.0" instance="n5v5kTyDdg0">
+                <Personality template="pclk_v2" version="1.1" instance="-x40UErlcVI">
                     <Block location="peri[1].group[3].div_8[0]" locked="true">
                         <Aliases>
                             <Alias value="CYBSP_SDHC_1_CLK_DIV"/>
@@ -2610,7 +2610,7 @@
                         <Param id="startOnReset" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="mmio" version="1.0" instance="UUwTfYwsYSw">
+                <Personality template="mmio" version="1.1" instance="d2Nc0APIQGk">
                     <Block location="peri[1].mmio[0]" locked="true"/>
                     <Parameters>
                         <Param id="divider1" value="2"/>
@@ -3165,7 +3165,7 @@
                         <Param id="inFlash" value="true"/>
                     </Parameters>
                 </Personality>
-                <Personality template="power_v4" version="1.0" instance="lMGDNnoZghg">
+                <Personality template="power_v4" version="1.1" instance="Y9yRLawRILM">
                     <Block location="srss[0].power[0]" locked="true"/>
                     <Parameters>
                         <Param id="actPwrMode" value="POWER_PROFILE_HP"/>
@@ -3482,6 +3482,7 @@
                     <Parameters>
                         <Param id="mode" value="Device"/>
                         <Param id="timerEnable" value="true"/>
+                        <Param id="usbCounter#inFlash" value="false"/>
                         <Param id="usbCounter#usbCounter" value="AUTOPLACEDtcpwm[0].group[0].cnt[1]"/>
                     </Parameters>
                     <Personality template="usbCounter" instance="jZetNzFzV3U">
@@ -3490,14 +3491,12 @@
                                 <Alias value="CYBSP_USB_OS_TIMER_COUNTER"/>
                             </Aliases>
                         </Block>
-                        <Parameters>
-                            <Param id="inFlash" value="false"/>
-                        </Parameters>
                     </Personality>
                 </Personality>
                 <Personality template="edgeprotect_bootloader_cfg" version="1.0" instance="vCn1wQsfU9o">
                     <Block location="vres[0].edgeprotect_bootloader_cfg[0]" locked="true"/>
                     <Parameters>
+                        <Param id="app0_data_encryption_key_path" value="../../../../keys/aes_key_1.bin"/>
                         <Param id="app0_hw_rollback_number" value="2"/>
                         <Param id="app0_hw_rollback_value" value="1"/>
                         <Param id="app0_image_boot_record" value="App_0"/>
@@ -3511,14 +3510,14 @@
                         <Param id="app0_manual_primary_offset" value="0x00100000"/>
                         <Param id="app0_manual_primary_size" value="0x00240000"/>
                         <Param id="app0_output_hex_path" value="../../../../build/project_hex/proj_cm33_s_signed.hex"/>
+                        <Param id="app0_project_name" value="proj_cm33_s"/>
                         <Param id="app0_ram_load" value="false"/>
                         <Param id="app0_ram_load_region" value=""/>
                         <Param id="app0_secondary_region" value="1ldsifQHjoE"/>
                         <Param id="app0_secure_access" value="true"/>
                         <Param id="app0_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app0_sig_verify_key_id" value="0"/>
-                        <Param id="app0_signature_key_id" value="1"/>
-                        <Param id="app0_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app10_data_encryption_key_path" value="../../../../keys/aes_key_11.bin"/>
                         <Param id="app10_hw_rollback_number" value="12"/>
                         <Param id="app10_hw_rollback_value" value="1"/>
                         <Param id="app10_image_boot_record" value="App_10"/>
@@ -3532,14 +3531,14 @@
                         <Param id="app10_manual_primary_offset" value="0x00000000"/>
                         <Param id="app10_manual_primary_size" value="0x00100000"/>
                         <Param id="app10_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app10_project_name" value="proj_app_10"/>
                         <Param id="app10_ram_load" value="false"/>
                         <Param id="app10_ram_load_region" value=""/>
                         <Param id="app10_secondary_region" value=""/>
                         <Param id="app10_secure_access" value="false"/>
                         <Param id="app10_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app10_sig_verify_key_id" value="0"/>
-                        <Param id="app10_signature_key_id" value="1"/>
-                        <Param id="app10_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app11_data_encryption_key_path" value="../../../../keys/aes_key_12.bin"/>
                         <Param id="app11_hw_rollback_number" value="13"/>
                         <Param id="app11_hw_rollback_value" value="1"/>
                         <Param id="app11_image_boot_record" value="App_11"/>
@@ -3553,14 +3552,14 @@
                         <Param id="app11_manual_primary_offset" value="0x00000000"/>
                         <Param id="app11_manual_primary_size" value="0x00100000"/>
                         <Param id="app11_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app11_project_name" value="proj_app_11"/>
                         <Param id="app11_ram_load" value="false"/>
                         <Param id="app11_ram_load_region" value=""/>
                         <Param id="app11_secondary_region" value=""/>
                         <Param id="app11_secure_access" value="false"/>
                         <Param id="app11_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app11_sig_verify_key_id" value="0"/>
-                        <Param id="app11_signature_key_id" value="1"/>
-                        <Param id="app11_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app12_data_encryption_key_path" value="../../../../keys/aes_key_13.bin"/>
                         <Param id="app12_hw_rollback_number" value="14"/>
                         <Param id="app12_hw_rollback_value" value="1"/>
                         <Param id="app12_image_boot_record" value="App_12"/>
@@ -3574,14 +3573,14 @@
                         <Param id="app12_manual_primary_offset" value="0x00000000"/>
                         <Param id="app12_manual_primary_size" value="0x00100000"/>
                         <Param id="app12_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app12_project_name" value="proj_app_12"/>
                         <Param id="app12_ram_load" value="false"/>
                         <Param id="app12_ram_load_region" value=""/>
                         <Param id="app12_secondary_region" value=""/>
                         <Param id="app12_secure_access" value="false"/>
                         <Param id="app12_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app12_sig_verify_key_id" value="0"/>
-                        <Param id="app12_signature_key_id" value="1"/>
-                        <Param id="app12_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app13_data_encryption_key_path" value="../../../../keys/aes_key_14.bin"/>
                         <Param id="app13_hw_rollback_number" value="15"/>
                         <Param id="app13_hw_rollback_value" value="1"/>
                         <Param id="app13_image_boot_record" value="App_13"/>
@@ -3595,14 +3594,14 @@
                         <Param id="app13_manual_primary_offset" value="0x00000000"/>
                         <Param id="app13_manual_primary_size" value="0x00100000"/>
                         <Param id="app13_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app13_project_name" value="proj_app_13"/>
                         <Param id="app13_ram_load" value="false"/>
                         <Param id="app13_ram_load_region" value=""/>
                         <Param id="app13_secondary_region" value=""/>
                         <Param id="app13_secure_access" value="false"/>
                         <Param id="app13_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app13_sig_verify_key_id" value="0"/>
-                        <Param id="app13_signature_key_id" value="1"/>
-                        <Param id="app13_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app14_data_encryption_key_path" value="../../../../keys/aes_key_15.bin"/>
                         <Param id="app14_hw_rollback_number" value="16"/>
                         <Param id="app14_hw_rollback_value" value="1"/>
                         <Param id="app14_image_boot_record" value="App_14"/>
@@ -3616,14 +3615,14 @@
                         <Param id="app14_manual_primary_offset" value="0x00000000"/>
                         <Param id="app14_manual_primary_size" value="0x00100000"/>
                         <Param id="app14_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app14_project_name" value="proj_app_14"/>
                         <Param id="app14_ram_load" value="false"/>
                         <Param id="app14_ram_load_region" value=""/>
                         <Param id="app14_secondary_region" value=""/>
                         <Param id="app14_secure_access" value="false"/>
                         <Param id="app14_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app14_sig_verify_key_id" value="0"/>
-                        <Param id="app14_signature_key_id" value="1"/>
-                        <Param id="app14_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app15_data_encryption_key_path" value="../../../../keys/aes_key_16.bin"/>
                         <Param id="app15_hw_rollback_number" value="17"/>
                         <Param id="app15_hw_rollback_value" value="1"/>
                         <Param id="app15_image_boot_record" value="App_15"/>
@@ -3637,14 +3636,14 @@
                         <Param id="app15_manual_primary_offset" value="0x00000000"/>
                         <Param id="app15_manual_primary_size" value="0x00100000"/>
                         <Param id="app15_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app15_project_name" value="proj_app_15"/>
                         <Param id="app15_ram_load" value="false"/>
                         <Param id="app15_ram_load_region" value=""/>
                         <Param id="app15_secondary_region" value=""/>
                         <Param id="app15_secure_access" value="false"/>
                         <Param id="app15_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app15_sig_verify_key_id" value="0"/>
-                        <Param id="app15_signature_key_id" value="1"/>
-                        <Param id="app15_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app1_data_encryption_key_path" value="../../../../keys/aes_key_2.bin"/>
                         <Param id="app1_hw_rollback_number" value="3"/>
                         <Param id="app1_hw_rollback_value" value="1"/>
                         <Param id="app1_image_boot_record" value="App_1"/>
@@ -3658,14 +3657,14 @@
                         <Param id="app1_manual_primary_offset" value="0x00340000"/>
                         <Param id="app1_manual_primary_size" value="0x00240000"/>
                         <Param id="app1_output_hex_path" value="../../../../build/project_hex/proj_cm33_ns_signed.hex"/>
+                        <Param id="app1_project_name" value="proj_cm33_ns"/>
                         <Param id="app1_ram_load" value="false"/>
                         <Param id="app1_ram_load_region" value=""/>
                         <Param id="app1_secondary_region" value="UNL7BURV0Cc"/>
                         <Param id="app1_secure_access" value="false"/>
                         <Param id="app1_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app1_sig_verify_key_id" value="0"/>
-                        <Param id="app1_signature_key_id" value="1"/>
-                        <Param id="app1_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app2_data_encryption_key_path" value="../../../../keys/aes_key_3.bin"/>
                         <Param id="app2_hw_rollback_number" value="4"/>
                         <Param id="app2_hw_rollback_value" value="1"/>
                         <Param id="app2_image_boot_record" value="App_2"/>
@@ -3679,14 +3678,14 @@
                         <Param id="app2_manual_primary_offset" value="0x00580000"/>
                         <Param id="app2_manual_primary_size" value="0x00300000"/>
                         <Param id="app2_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app2_project_name" value="proj_cm55"/>
                         <Param id="app2_ram_load" value="false"/>
                         <Param id="app2_ram_load_region" value=""/>
                         <Param id="app2_secondary_region" value="_ht0IxhDpwk"/>
                         <Param id="app2_secure_access" value="false"/>
                         <Param id="app2_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app2_sig_verify_key_id" value="0"/>
-                        <Param id="app2_signature_key_id" value="1"/>
-                        <Param id="app2_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app3_data_encryption_key_path" value="../../../../keys/aes_key_4.bin"/>
                         <Param id="app3_hw_rollback_number" value="5"/>
                         <Param id="app3_hw_rollback_value" value="1"/>
                         <Param id="app3_image_boot_record" value="App_3"/>
@@ -3700,14 +3699,14 @@
                         <Param id="app3_manual_primary_offset" value="0x00000000"/>
                         <Param id="app3_manual_primary_size" value="0x00100000"/>
                         <Param id="app3_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app3_project_name" value="proj_app_3"/>
                         <Param id="app3_ram_load" value="false"/>
                         <Param id="app3_ram_load_region" value=""/>
                         <Param id="app3_secondary_region" value=""/>
                         <Param id="app3_secure_access" value="false"/>
                         <Param id="app3_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app3_sig_verify_key_id" value="0"/>
-                        <Param id="app3_signature_key_id" value="1"/>
-                        <Param id="app3_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app4_data_encryption_key_path" value="../../../../keys/aes_key_5.bin"/>
                         <Param id="app4_hw_rollback_number" value="6"/>
                         <Param id="app4_hw_rollback_value" value="1"/>
                         <Param id="app4_image_boot_record" value="App_4"/>
@@ -3721,14 +3720,14 @@
                         <Param id="app4_manual_primary_offset" value="0x00000000"/>
                         <Param id="app4_manual_primary_size" value="0x00100000"/>
                         <Param id="app4_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app4_project_name" value="proj_app_4"/>
                         <Param id="app4_ram_load" value="false"/>
                         <Param id="app4_ram_load_region" value=""/>
                         <Param id="app4_secondary_region" value=""/>
                         <Param id="app4_secure_access" value="false"/>
                         <Param id="app4_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app4_sig_verify_key_id" value="0"/>
-                        <Param id="app4_signature_key_id" value="1"/>
-                        <Param id="app4_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app5_data_encryption_key_path" value="../../../../keys/aes_key_6.bin"/>
                         <Param id="app5_hw_rollback_number" value="7"/>
                         <Param id="app5_hw_rollback_value" value="1"/>
                         <Param id="app5_image_boot_record" value="App_5"/>
@@ -3742,14 +3741,14 @@
                         <Param id="app5_manual_primary_offset" value="0x00000000"/>
                         <Param id="app5_manual_primary_size" value="0x00100000"/>
                         <Param id="app5_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app5_project_name" value="proj_app_5"/>
                         <Param id="app5_ram_load" value="false"/>
                         <Param id="app5_ram_load_region" value=""/>
                         <Param id="app5_secondary_region" value=""/>
                         <Param id="app5_secure_access" value="false"/>
                         <Param id="app5_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app5_sig_verify_key_id" value="0"/>
-                        <Param id="app5_signature_key_id" value="1"/>
-                        <Param id="app5_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app6_data_encryption_key_path" value="../../../../keys/aes_key_7.bin"/>
                         <Param id="app6_hw_rollback_number" value="8"/>
                         <Param id="app6_hw_rollback_value" value="1"/>
                         <Param id="app6_image_boot_record" value="App_6"/>
@@ -3763,14 +3762,14 @@
                         <Param id="app6_manual_primary_offset" value="0x00000000"/>
                         <Param id="app6_manual_primary_size" value="0x00100000"/>
                         <Param id="app6_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app6_project_name" value="proj_app_6"/>
                         <Param id="app6_ram_load" value="false"/>
                         <Param id="app6_ram_load_region" value=""/>
                         <Param id="app6_secondary_region" value=""/>
                         <Param id="app6_secure_access" value="false"/>
                         <Param id="app6_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app6_sig_verify_key_id" value="0"/>
-                        <Param id="app6_signature_key_id" value="1"/>
-                        <Param id="app6_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app7_data_encryption_key_path" value="../../../../keys/aes_key_8.bin"/>
                         <Param id="app7_hw_rollback_number" value="9"/>
                         <Param id="app7_hw_rollback_value" value="1"/>
                         <Param id="app7_image_boot_record" value="App_7"/>
@@ -3784,14 +3783,14 @@
                         <Param id="app7_manual_primary_offset" value="0x00000000"/>
                         <Param id="app7_manual_primary_size" value="0x00100000"/>
                         <Param id="app7_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app7_project_name" value="proj_app_7"/>
                         <Param id="app7_ram_load" value="false"/>
                         <Param id="app7_ram_load_region" value=""/>
                         <Param id="app7_secondary_region" value=""/>
                         <Param id="app7_secure_access" value="false"/>
                         <Param id="app7_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app7_sig_verify_key_id" value="0"/>
-                        <Param id="app7_signature_key_id" value="1"/>
-                        <Param id="app7_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app8_data_encryption_key_path" value="../../../../keys/aes_key_9.bin"/>
                         <Param id="app8_hw_rollback_number" value="10"/>
                         <Param id="app8_hw_rollback_value" value="1"/>
                         <Param id="app8_image_boot_record" value="App_8"/>
@@ -3805,14 +3804,14 @@
                         <Param id="app8_manual_primary_offset" value="0x00000000"/>
                         <Param id="app8_manual_primary_size" value="0x00100000"/>
                         <Param id="app8_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app8_project_name" value="proj_app_8"/>
                         <Param id="app8_ram_load" value="false"/>
                         <Param id="app8_ram_load_region" value=""/>
                         <Param id="app8_secondary_region" value=""/>
                         <Param id="app8_secure_access" value="false"/>
                         <Param id="app8_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app8_sig_verify_key_id" value="0"/>
-                        <Param id="app8_signature_key_id" value="1"/>
-                        <Param id="app8_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
+                        <Param id="app9_data_encryption_key_path" value="../../../../keys/aes_key_10.bin"/>
                         <Param id="app9_hw_rollback_number" value="11"/>
                         <Param id="app9_hw_rollback_value" value="1"/>
                         <Param id="app9_image_boot_record" value="App_9"/>
@@ -3826,14 +3825,13 @@
                         <Param id="app9_manual_primary_offset" value="0x00000000"/>
                         <Param id="app9_manual_primary_size" value="0x00100000"/>
                         <Param id="app9_output_hex_path" value="../../../../build/project_hex/proj_cm55_signed.hex"/>
+                        <Param id="app9_project_name" value="proj_app_9"/>
                         <Param id="app9_ram_load" value="false"/>
                         <Param id="app9_ram_load_region" value=""/>
                         <Param id="app9_secondary_region" value=""/>
                         <Param id="app9_secure_access" value="false"/>
                         <Param id="app9_sig_verify_algo_provisioned" value="ecdsa_p256"/>
                         <Param id="app9_sig_verify_key_id" value="0"/>
-                        <Param id="app9_signature_key_id" value="1"/>
-                        <Param id="app9_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
                         <Param id="bootloader_device" value="INTERNAL_RRAM"/>
                         <Param id="bootloader_hw_rollback_value" value="1"/>
                         <Param id="bootloader_image_boot_record" value="proj_bldr"/>
@@ -3841,8 +3839,8 @@
                         <Param id="bootloader_input_hex_path" value="../../../../build/project_hex/proj_bootloader.hex"/>
                         <Param id="bootloader_nvm_its_MEMORY_PLACED" value="true"/>
                         <Param id="bootloader_output_hex_path" value="../../../../build/project_hex/proj_bootloader_signed.hex"/>
+                        <Param id="bootloader_project_name" value="proj_bootloader"/>
                         <Param id="bootloader_signature_enable" value="false"/>
-                        <Param id="bootloader_signature_priv_key_path" value="../../../../keys/oem_private_key_0.pem"/>
                         <Param id="bootloader_sram_code_region_MEMORY_PLACED" value="false"/>
                         <Param id="bootloader_sram_region_MEMORY_PLACED" value="false"/>
                         <Param id="built_in_keys" value="true"/>
@@ -3852,7 +3850,7 @@
                         <Param id="hw_rollback_protection" value="false"/>
                         <Param id="image_count" value="3"/>
                         <Param id="image_encryption" value="off"/>
-                        <Param id="key_encryption_key_address" value="0x3203A000"/>
+                        <Param id="key_encryption_key_id" value="25"/>
                         <Param id="key_encryption_key_path" value="../../../../keys/enc-ec256-pub.pem"/>
                         <Param id="logging_level" value="dbg"/>
                         <Param id="max_boot_record_size" value="0x200"/>
@@ -3862,14 +3860,15 @@
                         <Param id="measured_boot" value="false"/>
                         <Param id="measured_boot_record_region" value=""/>
                         <Param id="nonce_output_file_path" value="../../../../keys/nonce.bin"/>
+                        <Param id="oem_private_key_path" value="../../../../keys/oem_private_key_0.pem"/>
                         <Param id="reserved_memory_region_its#cores" value="CORE_NAME_CM33_0_S"/>
                         <Param id="reserved_memory_region_its#memory" value="RRAM"/>
                         <Param id="reserved_memory_region_its#offset" value="0x00011000"/>
                         <Param id="reserved_memory_region_its#reserved_memory_region_its" value="AUTOPLACEDvres[0].reserved_memory_region[0]"/>
                         <Param id="reserved_memory_region_its#size" value="0x00028000"/>
                         <Param id="scratch_region" value=""/>
-                        <Param id="se_ram_app_staging_address" value="0x70400000"/>
-                        <Param id="se_ram_app_staging_size" value="0x40000"/>
+                        <Param id="se_ram_app_staging_ram_address" value="0x34002000"/>
+                        <Param id="se_ram_app_staging_region" value=""/>
                         <Param id="stage_se_ram_app" value="false"/>
                         <Param id="sw_downgrade_prevention" value="false"/>
                         <Param id="swap_status_region" value=""/>
@@ -4227,6 +4226,7 @@
                         <Param id="pcSwitch" value="false"/>
                         <Param id="secureDebuggerAccess" value="true"/>
                         <Param id="type" value="NON_SECURE"/>
+                        <Param id="validation_security_boundary" value="SECURE"/>
                     </Parameters>
                     <Personality template="domain0" instance="7cPl230VJyc">
                         <Block location="vres[0].protection[0].domain[0]" locked="false">
@@ -4278,7 +4278,6 @@
                         <Param id="response2" value="CY_MPC_BUS_ERR"/>
                         <Param id="response3" value="CY_MPC_BUS_ERR"/>
                         <Param id="response4" value="CY_MPC_BUS_ERR"/>
-                        <Param id="response5" value="CY_MPC_BUS_ERR"/>
                     </Parameters>
                 </Personality>
             </BlockConfig>
@@ -4532,10 +4531,6 @@
                     <Port name="scb[10].tr_tx_req[0]"/>
                 </Net>
                 <Net>
-                    <Port name="pass[0].clk_hf[0]"/>
-                    <Port name="srss[0].clock[0].hfclk[9].root_clk[0]"/>
-                </Net>
-                <Net>
                     <Port name="pdm[0].clk_if_srss[0]"/>
                     <Port name="peri[1].group[1].div_16_5[1].clk[0]"/>
                 </Net>
@@ -4580,6 +4575,14 @@
                     <Port name="tcpwm[0].group[0].cnt[7].clock_counter_en[0]"/>
                 </Net>
                 <Net>
+                    <Port name="peri[0].group[9].div_8[0].clk_pclk_root[0]"/>
+                    <Port name="srss[0].clock[0].hfclk[13].root_clk[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].mmio[0].clk_pclk_root[3]"/>
+                    <Port name="srss[0].clock[0].hfclk[11].root_clk[0]"/>
+                </Net>
+                <Net>
                     <Port name="peri[1].group[1].div_16_5[0].clk[0]"/>
                     <Port name="tdm[0].tdm[0].clk_if_srss[0]"/>
                 </Net>
@@ -4588,8 +4591,16 @@
                     <Port name="sdhc[0].clk_hf[0]"/>
                 </Net>
                 <Net>
+                    <Port name="peri[1].group[2].div_8[0].clk_pclk_root[0]"/>
+                    <Port name="srss[0].clock[0].hfclk[5].root_clk[0]"/>
+                </Net>
+                <Net>
                     <Port name="peri[1].group[3].div_8[0].clk[0]"/>
                     <Port name="sdhc[1].clk_hf[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[1].group[3].div_8[0].clk_pclk_root[0]"/>
+                    <Port name="srss[0].clock[0].hfclk[6].root_clk[0]"/>
                 </Net>
                 <Net>
                     <Port name="smif[0].core[0].clk_pll_normal[0]"/>
@@ -4600,12 +4611,49 @@
                     <Port name="srss[0].clock[0].hfclk[4].root_clk[0]"/>
                 </Net>
                 <Net>
+                    <Port name="srss[0].clock[0].hfclk[8].root_clk[0]"/>
+                    <Port name="usbhs[0].clk_phy_pll_ref[0]"/>
+                </Net>
+                <Net>
+                    <Port name="pass[0].clk_hf[0]"/>
+                    <Port name="peri[0].mmio[0].clk_pclk_root[5]"/>
+                    <Port name="srss[0].clock[0].hfclk[9].root_clk[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[1].group[1].div_16_5[0].clk_pclk_root[0]"/>
+                    <Port name="peri[1].group[1].div_16_5[1].clk_pclk_root[0]"/>
+                    <Port name="srss[0].clock[0].hfclk[7].root_clk[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].group[7].div_16_5[0].clk_pclk_root[0]"/>
+                    <Port name="peri[0].mmio[0].clk_pclk_root[0]"/>
+                    <Port name="peri[0].mmio[0].clk_pclk_root[2]"/>
+                    <Port name="peri[0].mmio[0].clk_pclk_root[4]"/>
+                    <Port name="srss[0].clock[0].hfclk[0].root_clk[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[1].mmio[0].clk_pclk_root[0]"/>
+                    <Port name="peri[1].mmio[0].clk_pclk_root[1]"/>
+                    <Port name="peri[1].mmio[0].clk_pclk_root[2]"/>
+                    <Port name="peri[1].mmio[0].clk_pclk_root[3]"/>
+                    <Port name="peri[1].mmio[0].clk_pclk_root[4]"/>
                     <Port name="srss[0].clock[0].hfclk[1].root_clk[0]"/>
                     <Port name="usbhs[0].mmio_clk_hf[0]"/>
                 </Net>
                 <Net>
-                    <Port name="srss[0].clock[0].hfclk[8].root_clk[0]"/>
-                    <Port name="usbhs[0].clk_phy_pll_ref[0]"/>
+                    <Port name="peri[0].group[1].div_16[0].clk_pclk_root[0]"/>
+                    <Port name="peri[0].group[1].div_16[1].clk_pclk_root[0]"/>
+                    <Port name="peri[0].group[1].div_16[2].clk_pclk_root[0]"/>
+                    <Port name="peri[0].group[1].div_16[3].clk_pclk_root[0]"/>
+                    <Port name="peri[0].group[1].div_16_5[0].clk_pclk_root[0]"/>
+                    <Port name="peri[0].group[1].div_16_5[1].clk_pclk_root[0]"/>
+                    <Port name="peri[0].group[1].div_24_5[0].clk_pclk_root[0]"/>
+                    <Port name="peri[0].group[1].div_8[0].clk_pclk_root[0]"/>
+                    <Port name="peri[0].group[1].div_8[1].clk_pclk_root[0]"/>
+                    <Port name="peri[0].group[1].div_8[2].clk_pclk_root[0]"/>
+                    <Port name="peri[0].group[1].div_8[3].clk_pclk_root[0]"/>
+                    <Port name="peri[0].mmio[0].clk_pclk_root[1]"/>
+                    <Port name="srss[0].clock[0].hfclk[10].root_clk[0]"/>
                 </Net>
             </Netlist>
         </Device>

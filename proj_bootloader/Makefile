@@ -124,6 +124,7 @@ else ifeq ($(TOOLCHAIN),ARM)
     # to suppress the build error.
     DEFINES+= NSC_START_ADDRESS=0x0
     DEFINES+= NSC_END_ADDRESS=0x100
+    DEFINES+= NSC_SIZE=0x100
     # Suppress linker warnings (unused sections in the linker script)
     LDFLAGS+=--diag_suppress=L6314W,L6329W,L6244E
 else ifeq ($(TOOLCHAIN),IAR)
@@ -133,8 +134,14 @@ else ifeq ($(TOOLCHAIN),IAR)
     # Enable code copy for IAR toolchain
     DEFINES+=CY_INIT_CODECOPY_ENABLE
 endif
+
+-include ../bsps/TARGET_$(TARGET)/config/GeneratedSource/bootloader_linker_config.mk
 # Path to the linker script to use (if empty, use the default linker script).
-LINKER_SCRIPT=$(MTB_TOOLS__TARGET_DIR)/COMPONENT_$(CORE)/TOOLCHAIN_$(TOOLCHAIN)/bootloader.$(LINKER_SCRIPT_EXT)
+ifeq ($(LINKER_TYPE),SRAM)
+    LINKER_SCRIPT=../bsps/TARGET_$(TARGET)/COMPONENT_$(CORE)/TOOLCHAIN_$(TOOLCHAIN)/bootloader_sram.$(LINKER_SCRIPT_EXT)
+else
+    LINKER_SCRIPT=../bsps/TARGET_$(TARGET)/COMPONENT_$(CORE)/TOOLCHAIN_$(TOOLCHAIN)/bootloader.$(LINKER_SCRIPT_EXT)
+endif
 
 # Default nsc_veneer file must be empty because bootloader does not have NSC region
 NSC_VENEER=

@@ -24,7 +24,11 @@ struct flash_device flash_devices[] =
  [INTERNAL_RRAM] = {
   .address      = 0x22000000U,
   .size         = 0x80000U,
-  .erase_size   = 0x10U,
+   /* Real erase size of RRAM is 16 bytes,
+      but to avoid of decreasing of bootloader performance
+      and increasing of RAM consumption,
+      the virtual erase size is used increased to 512 bytes */
+  .erase_size   = 0x200U,
   .erase_val    = 0x0U,
   .device_id    = INTERNAL_RRAM,
  },
@@ -32,14 +36,14 @@ struct flash_device flash_devices[] =
   .address      = 0x70000000U,
   .size         = 0x1000000U,
   .erase_size   = 0x10000U,
-  .erase_val    = 0xffU,
+  .erase_val    = 0xFFU,
   .device_id    = EXTERNAL_S_FLASH,
  },
  [EXTERNAL_NS_FLASH] = {
   .address      = 0x60000000U,
   .size         = 0x1000000U,
   .erase_size   = 0x10000U,
-  .erase_val    = 0xffU,
+  .erase_val    = 0xFFU,
   .device_id    = EXTERNAL_NS_FLASH,
  },
 };

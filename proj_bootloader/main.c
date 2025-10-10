@@ -51,6 +51,13 @@ int main(void)
 {
     cy_rslt_t result;
 
+    /* Create sharedmem_var variable in the CY_SECTION_SHAREDMEM_SEC 
+    to avoid increasing of RAM consumption with IAR compiler */
+#if defined (__ICCARM__)    
+    CY_SECTION_SHAREDMEM_SEC static volatile uint32_t sharedmem_var = 0;
+    Cy_SysLib_Delay(sharedmem_var);
+#endif
+
     /* Set up internal routing, pins, and clock-to-peripheral connections */
     result = cybsp_init();
 

@@ -86,8 +86,6 @@
 
 /* Global Signature Verification Algorithm */
 #define MCUBOOT_SIGN_EC256
-#define MCUBOOT_SIGN_EC256
-#define MCUBOOT_SIGN_EC256
 
 /* Signature Verification Algorithm (Provisioned Keys) */
 #define MCUBOOT_SIGN_ECDSA_P256 MCUBOOT_SIG_VERIFY_ALGO_PROVISIONED_P256
@@ -107,9 +105,6 @@
 #define CY_BOOT_USE_INTERNAL_FLASH
 #define CY_BOOT_USE_EXTERNAL_S_FLASH
 #define CY_BOOT_USE_EXTERNAL_NS_FLASH
-#define CY_BOOT_USE_EXTERNAL_NS_FLASH
-#define CY_BOOT_USE_EXTERNAL_FLASH
-#define CY_BOOT_USE_EXTERNAL_FLASH
 #define CY_BOOT_USE_EXTERNAL_FLASH
 
 /* Key Encryption Key Address Configuration */

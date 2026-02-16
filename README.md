@@ -10,12 +10,12 @@ This code example has a three project structure: CM33 secure, CM33 non-secure, a
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-edge-protect-bootloader)
 
-[Provide feedback on this code example.](https://yourvoice.infineon.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzUzNzkiLCJTcGVjIE51bWJlciI6IjAwMi0zNTM3OSIsIkRvYyBUaXRsZSI6IlBTT0MmdHJhZGU7IEVkZ2UgTUNVOiBFZGdlIFByb3RlY3QgQm9vdGxvYWRlciIsInJpZCI6ImFydGVtLmRvdmhhbEBpbmZpbmVvbi5jb20iLCJEb2MgdmVyc2lvbiI6IjIuMi4wIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJQU09DIn0=)
+[Provide feedback on this code example.](https://yourvoice.infineon.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzUzNzkiLCJTcGVjIE51bWJlciI6IjAwMi0zNTM3OSIsIkRvYyBUaXRsZSI6IlBTT0MmdHJhZGU7IEVkZ2UgTUNVOiBFZGdlIFByb3RlY3QgQm9vdGxvYWRlciIsInJpZCI6ImFydGVtLmRvdmhhbEBpbmZpbmVvbi5jb20iLCJEb2MgdmVyc2lvbiI6IjIuMy4wIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJQU09DIn0=)
 
 
 ## Requirements
 
-- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.6 or later (tested with v3.6)
+- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.7 or later (tested with v3.7)
 - Board support package (BSP) minimum required version for:
    - KIT_PSE84_EVAL_EPC2: v1.0.0
    - KIT_PSE84_EVAL_EPC4: v1.0.0
@@ -230,6 +230,7 @@ Document title: *CE235379* – *PSOC&trade; Edge MCU: Edge Protect Bootloader*
  2.0.1   | Use se-rt-services-utils from BSP
  2.1.0   | SE RAMApp Staging for EPC4 (CM0 RAMApp) support <br>  Code execution from CM33 SRAM and external memory (EPC2, EPC4) <br> Multi-key multi-image XIP encryption (EPC2, EPC4) support  <br> Image encryption with SE RT Services API (EPC4)
  2.2.0   | Added KIT_PSE84_AI kit support 
+ 2.3.0   | Updated design files to fix ModusToolbox&trade; v3.7 build warnings
 <br>
 
 

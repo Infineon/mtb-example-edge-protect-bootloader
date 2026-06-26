@@ -7,6 +7,7 @@
 This document demonstrates the integration of the **PSOC_Edge_Protect_Bootloader** with a reference user application such as **PSOC_Edge_Basic_Secure_App**. It demonstrates the usage of **PSOC_Edge_Protect_Bootloader** code example to enable secure boot and secure firmware update features.
 
 While the instructions in this document use **PSOC_Edge_Basic_Secure_App** as an example, they also apply to other use cases involving secure boot or secure update. You can easily integrate Edge Protect Bootlaoder into any code example by following the instructions documented for this example.
+> **Note:** On the KIT_PSE84_HMI, all three projects are programmed to the external OSPI flash instead of QSPI.
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-edge-protect-bootloader)
 
@@ -20,6 +21,7 @@ While the instructions in this document use **PSOC_Edge_Basic_Secure_App** as an
    - KIT_PSE84_EVAL_EPC2: v1.0.0
    - KIT_PSE84_EVAL_EPC4: v1.0.0
    - KIT_PSE84_AI: v1.0.0
+   - KIT_PSE84_HMI: v1.3.0
 
 - Programming language: C
 - Associated parts: All [PSOC&trade; Edge E84 MCU](https://www.infineon.com/products/microcontroller/32-bit-psoc-arm-cortex/32-bit-psoc-edge-arm/psoc-edge-e84) parts
@@ -37,6 +39,7 @@ While the instructions in this document use **PSOC_Edge_Basic_Secure_App** as an
     - [PSOC&trade; Edge E84 Evaluation Kit](https://www.infineon.com/KIT_PSE84_EVAL) (`KIT_PSE84_EVAL_EPC2`) – Default value of `TARGET`
     - [PSOC&trade; Edge E84 Evaluation Kit](https://www.infineon.com/KIT_PSE84_EVAL) (`KIT_PSE84_EVAL_EPC4`)
     - [PSOC&trade; Edge E84 AI Kit](https://www.infineon.com/KIT_PSE84_AI) (`KIT_PSE84_AI`)
+    - [PSOC&trade; Edge E84 HMI Kit](https://www.infineon.com/KIT_PSE84_HMI) (`KIT_PSE84_HMI`)
 
 
 ## Hardware setup
@@ -238,7 +241,7 @@ edgeprotecttools create-key --key-type ML-DSA-87 --output keys/ml_dsa_key_privat
 
 **Figure 14. EPB logs for secure boot with PQC**
 
-![](images/PQC_boot.png)  
+![](images/pqc_boot.png)  
 
 #### Perform secure firmware update with Edge Protect Bootloader
 
@@ -317,6 +320,7 @@ Document title: *CE235379* – *PSOC&trade; Edge MCU: Edge Protect Bootloader*
  2.2.0   | Added KIT_PSE84_AI kit support 
  2.3.0   | Updated design files to fix ModusToolbox&trade; v3.7 build warnings
  2.4.0   | Added ML-DSA-87 post-quantum signature verification support <br> Configurable signature algorithm (ECDSA-P256 / ML-DSA-87) via Device Configurator
+ 2.5.0   | Added KIT_PSE84_HMI kit support
 <br>
 
 

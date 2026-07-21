@@ -2,7 +2,7 @@
 
 **PSOC_Edge_Protect_Bootloader** is an open-source MCUboot library-based bootloader for Infineon's PSOC&trade; Edge MCU. MCUboot is the primary bootloader in popular IoT operating systems, such as Zephyr and Apache Mynewt.
 
-**PSOC_Edge_Protect_Bootloader** supports secure boot and secure firmware update features using either ECDSA P-256 and PQC (ML-DSA-87) algorithms. It also supports several other features supported by the open-source MCUboot library on Infineon's PSOC&trade; Edge MCU. 
+**PSOC_Edge_Protect_Bootloader** supports secure boot and secure firmware update features using either ECDSA P-256 and PQC (ML-DSA-87, ML-DSA-65, ML-DSA-44) algorithms. It also supports configurable image hash algorithms (SHA-256, SHA-384, SHA-512) for ML-DSA pre-hash verification, and several other features supported by the open-source MCUboot library on Infineon's PSOC&trade; Edge MCU. 
 
 This document demonstrates the integration of the **PSOC_Edge_Protect_Bootloader** with a reference user application such as **PSOC_Edge_Basic_Secure_App**. It demonstrates the usage of **PSOC_Edge_Protect_Bootloader** code example to enable secure boot and secure firmware update features.
 
@@ -174,7 +174,7 @@ For detailed steps refer the [Operation](#operation) section.
  ![](images/enable_bootloader_signing.png)
 
 
-#### Secure boot with Edge Protect Bootloader using PQC (ML-DSA-87) 
+#### Secure boot with Edge Protect Bootloader using PQC (ML-DSA-87/65/44) 
 
 For enabling the secure boot of user application by Edge Protect Bootloader, follow the steps below
 
@@ -184,8 +184,10 @@ For enabling the secure boot of user application by Edge Protect Bootloader, fol
 2. Execute the following commands to generate the ML-DSA keys using Edge Protect Tools 
 
 ```
-edgeprotecttools create-key --key-type ML-DSA-87 --output keys/ml_dsa_key_private.der keys/ml_dsa_key_public.der --format DER
+edgeprotecttools create-key --key-type ML-DSA-87 --output keys/ml_dsa_87_key_private.der keys/ml_dsa_87_key_public.der --format DER
 ```
+
+> **Note:** Replace `ML-DSA-87` with `ML-DSA-65` or `ML-DSA-44` depending on your security level requirements. ML-DSA-87 provides NIST category 5, ML-DSA-65 provides category 3, and ML-DSA-44 provides category 2.
 
 ##### Configure Edge Protect Bootloader to use the ML-DSA keys for secure boot and secure firmware update
 
@@ -197,7 +199,9 @@ edgeprotecttools create-key --key-type ML-DSA-87 --output keys/ml_dsa_key_privat
 
    ![](images/epb_enable_validate.png)
 
-   b. Under *Security & Cryptography* , choose the Signature verification algorithm as *ML-DSA-87 (Dlithium5)*
+   b. Under *Security & Cryptography* , choose the Signature verification algorithm as *ML-DSA-87 (Dlithium5)*, *ML-DSA-65*, or *ML-DSA-44* depending on your security requirements.
+
+   > **Note:** When an ML-DSA algorithm is selected, an additional "Image hash algorithm" option becomes available. Choose SHA-384 for ML-DSA-65 or SHA-512 for ML-DSA-87 for recommended security levels per CNSA 2.0.
 
     **Figure 9. Select signature algorithm**
 
@@ -274,7 +278,7 @@ edgeprotecttools create-key --key-type ML-DSA-87 --output keys/ml_dsa_key_privat
 
 ### Use other bootloader capabilities
 
-**PSOC_Edge_Protect_Bootloader** provides several other capabilities including secure boot and secure update with ECDSA P-256 keys, overwrite and swap update mechanism, encrypted boot with AES-128 keys, and loading user application to SRAM, and more. Refer to the application note [Edge Protect Bootloader for PSOC™ Edge MCU](https://www.infineon.com/AN237857) to learn how to configure these features.
+**PSOC_Edge_Protect_Bootloader** provides several other capabilities including secure boot and secure update with ECDSA P-256 or ML-DSA-87/65/44 keys, overwrite and swap update mechanism, encrypted boot with AES-128 keys, and loading user application to SRAM, and more. Refer to the application note [Edge Protect Bootloader for PSOC™ Edge MCU](https://www.infineon.com/AN237857) to learn how to configure these features.
 
 
 ### Bootloader integration with LLVM-compiled applications
@@ -321,6 +325,7 @@ Document title: *CE235379* – *PSOC&trade; Edge MCU: Edge Protect Bootloader*
  2.3.0   | Updated design files to fix ModusToolbox&trade; v3.7 build warnings
  2.4.0   | Added ML-DSA-87 post-quantum signature verification support <br> Configurable signature algorithm (ECDSA-P256 / ML-DSA-87) via Device Configurator
  2.5.0   | Added KIT_PSE84_HMI kit support
+ 2.6.0   | Added ML-DSA-65 and ML-DSA-44 post-quantum signature support <br> Configurable image hash algorithm (SHA-256/384/512) for ML-DSA pre-hash via Device Configurator
 <br>
 
 

@@ -20,10 +20,9 @@ extern "C" {
 /* Use WolfSSL's pure C implementation (not liboqs) */
 #define WOLFSSL_WC_DILITHIUM
 
-/* Enable only verification (reduce code size) */
+/* Bootloader only verifies signatures. Compile in verification + public-key
+ * operations only. */
 #define WOLFSSL_DILITHIUM_VERIFY_ONLY
-#define WOLFSSL_DILITHIUM_NO_MAKE_KEY
-#define WOLFSSL_DILITHIUM_NO_SIGN
 
 /* Enable small memory verification mode */
 #define WOLFSSL_DILITHIUM_VERIFY_SMALL_MEM
@@ -39,6 +38,14 @@ extern "C" {
 #define WOLFSSL_DILITHIUM_NO_ASN1
 
 /* Enable all ML-DSA parameter sets (disable unused ones based on USE_MLDSA* from command line) */
+#ifndef USE_MLDSA44
+#define WOLFSSL_NO_ML_DSA_44
+#endif
+
+#ifndef USE_MLDSA65
+#define WOLFSSL_NO_ML_DSA_65
+#endif
+
 #ifndef USE_MLDSA87
 #define WOLFSSL_NO_ML_DSA_87
 #endif
@@ -47,6 +54,11 @@ extern "C" {
 #define WOLFSSL_SHA3
 #define WOLFSSL_SHAKE128
 #define WOLFSSL_SHAKE256
+
+/* SHA-384 and SHA-512 support for HashML-DSA pre-hash.
+ * Required when MCUBOOT_MLDSA_HASH_ALG is set to SHA-384 or SHA-512. */
+#define WOLFSSL_SHA384
+#define WOLFSSL_SHA512
 
 /* Disable unused features to minimize code size */
 #define NO_FILESYSTEM

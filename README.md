@@ -16,7 +16,7 @@ While the instructions in this document use **PSOC_Edge_Basic_Secure_App** as an
 
 ## Requirements
 
-- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.8 or later (tested with v3.8)
+- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.7 or later (tested with v3.8)
 - Board support package (BSP) minimum required version for:
    - KIT_PSE84_EVAL_EPC2: v1.0.0
    - KIT_PSE84_EVAL_EPC4: v1.0.0
@@ -326,6 +326,7 @@ Document title: *CE235379* – *PSOC&trade; Edge MCU: Edge Protect Bootloader*
  2.4.0   | Added ML-DSA-87 post-quantum signature verification support <br> Configurable signature algorithm (ECDSA-P256 / ML-DSA-87) via Device Configurator
  2.5.0   | Added KIT_PSE84_HMI kit support
  2.6.0   | Added ML-DSA-65 and ML-DSA-44 post-quantum signature support <br> Configurable image hash algorithm (SHA-256/384/512) for ML-DSA pre-hash via Device Configurator
+ 2.6.1   | ECO configurations update for KIT_PSE84_HMI
 <br>
 
 
